@@ -1,8 +1,24 @@
-body {
-    background-color: #c7e1ec;
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
 }
-.texto{
-    font-size: 70px;
-    color: #1e1f40;
-    text-align: center;
+body {
+    background-color: #4b6e89;
+    color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    background-color: #333;
+    border-bottom: 1px solid #b0b0b0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
 }
