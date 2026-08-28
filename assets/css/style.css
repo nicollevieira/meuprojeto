@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #4b6e89;
+    background-color: #121d34;
     color: #eee;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
@@ -15,10 +15,36 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 8%;
-    background-color: #333;
+    background-color: #1d2e53;
     border-bottom: 1px solid #b0b0b0;
     position: sticky;
     top: 0;
     z-index: 10;
 
+}
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo::first-letter {
+    color: #7fa2be;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.letrad {
+    color:#7fa2be
+}
+.menu a {
+    color: #eee;
+    text-decoration: none;
+    font-size: 14px;
+}
+.menu a:hover{
+    color: #eee;
+    font-size: 100px;
 }
