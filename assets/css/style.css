@@ -28,7 +28,7 @@ header {
 }
 
 .logo::first-letter {
-    color: #7fa2be;
+    color: #6cc4ff;
 }
 
 .menu {
@@ -76,25 +76,63 @@ header {
     left: 8%;
     transform: translateY(-50%);
 }
-
-
-
-
-
-
-.h1 {
-    font-size: 50px;
+.categoria {
+    color: #6cc4ff;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
 }
-.descricao {
-    max-width: 600px;
-    margin-bottom: 20px;
+h1 {
+    font-size: 52px;
+    line-height: 1.05;
+    margin: 12px 0 20px;
+}
+.destaque p {
+    color: #ccc;
+    max-width: 550px;
+    margin-bottom: 25px;
 }
 .botao {
+    padding: 13px 22px;
+    border: none;
+    border-radius: 10px;
     background-color: #ffffff;
     color: #000000;
-    border: none;
-    padding: 8px 10px;
+    font-weight: bold;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+.botao:hover {
+    background-color: #6cc4ff;
+    scale: 1.1;
+}
+
+.secao {
+    padding: 70px 8%;
+}
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 30px;
+}
+.titulo span {
+    color: #6cc4ff;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.titulo h2 {
+    font-size: 32px;
+    margin-top: 5px;
+}
+.titulo a {
+    color: #6cc4ff;
+    font-size: 14px;
+    text-decoration: none;
+}
+.titulo a:hover {
+    color: #fff;
 }
