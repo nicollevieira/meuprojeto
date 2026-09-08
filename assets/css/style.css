@@ -136,3 +136,15 @@ h1 {
 .titulo a:hover {
     color: #fff;
 }
+.noticias-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.noticia {
+    background-color: #191919;
+    border: 1px solid #292929;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
