@@ -113,7 +113,7 @@ h1 {
 }
 
 .titulo {
-    display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: end;
     margin-bottom: 30px;
@@ -129,9 +129,12 @@ h1 {
     margin-top: 5px;
 }
 .titulo a {
+    position: absolute;
+    right: 0;
+    top: 45px;
     color: #6cc4ff;
-    font-size: 14px;
-    text-decoration: none;
+    font-size: 15px;
+    text-decoration: underline;
 }
 .titulo a:hover {
     color: #fff;
@@ -230,8 +233,53 @@ h1 {
     margin-top: 3px;
 }
 
-
-
+.liveaction-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 20px;
+}
+.liveaction {
+    position: relative;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.liveaction img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+}
+.liveaction:hover img {
+    transform: scale(1.25);
+}
+.liveaction::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: 
+        linear-gradient(
+            transparent 35%,
+            rgba(0, 0, 0, 0.9)
+        );
+}
+.liveaction div {
+    position: absolute;
+    z-index: 1;
+    bottom: 20px;
+    left: 20px;
+}
+.liveaction span {
+    color: #6cc4ff;
+    font-size: 10px;
+    font-weight: bold;
+}
+.liveaction h3 {
+    font-size: 24px;
+    margin-top: 3px;
+}
 
 .classicos-grid {
     display: grid;
