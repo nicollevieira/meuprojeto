@@ -188,7 +188,7 @@ h1 {
 
 .animacoes-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 2fr);
     gap: 20px;
 }
 .animacao {
@@ -284,7 +284,7 @@ h1 {
 
 .programas-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 2fr);
     gap: 20px;
 }
 .programa {
